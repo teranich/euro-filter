@@ -11,7 +11,8 @@ const ZoomImageIS = styled(Image)`
     cursor: zoom-in;
     transition: transform 0.2s;
     :hover {
-        transform: scale(1.5);
+        ${(props) => `transform:scale(${props.scale || 1.5});`}
+        
     }
 
 `;
